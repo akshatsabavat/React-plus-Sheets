@@ -1,10 +1,12 @@
 import "./Home.scss";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 export default function Home() {
   const { register, handleSubmit } = useForm();
+  const { userData, setUserData } = useState("");
 
-  const displayData = (data) => console.log(data);
+  const displayData = (data) => console.log(data.emailID);
 
   return (
     <div className="TempHolderPage">
