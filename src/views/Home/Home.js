@@ -6,7 +6,7 @@ export default function Home() {
   const { register, handleSubmit } = useForm();
   const { userData, setUserData } = useState("");
 
-  const displayData = (data) => console.log(data.emailID);
+  const displayData = (data) => console.log(JSON.stringify(data));
 
   return (
     <div className="TempHolderPage">
